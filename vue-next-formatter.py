@@ -100,12 +100,13 @@ class VuenextformatterCommand(sublime_plugin.TextCommand):
       print("Unexpected error({0}): {1}".format(sys.exc_info()[0], sys.exc_info()[1]))
 
       # Usually, it's just node.js not being found. Try to alleviate the issue.
-      msg = "Node.js was not found in the default path. Please specify the location."
-      if not sublime.ok_cancel_dialog(msg):
-        msg = "You won't be able to use this plugin without specifying the path to node.js."
-        sublime.error_message(msg)
-      else:
-        PluginUtils.open_sublime_settings(self.view.window())
+      msg = "Formatter failed! Node.js was not found in the default path. Please specify the location."
+      sublime.error_message(msg)
+      # if not sublime.error_message(msg):
+        # msg = "You won't be able to use this plugin without specifying the path to node.js."
+        # sublime.error_message(msg)
+      # else:
+      #   PluginUtils.open_sublime_settings(self.view.window())
 
   def get_output_diagnostics(self, output):
     index = output.find(OUTPUT_VALID)
