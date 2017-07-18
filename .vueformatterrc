@@ -10,12 +10,8 @@
         "allowed_file_extensions": ["vue"]
     },
     "es": {
-        "allowed_file_extensions": ["vueformatterrc"]
         "indent": {
-            "value": "  ",
-            "FunctionExpression": 1,
-            "ArrayExpression": 0,
-            "ObjectExpression": 0
+            "value": "  "
         },
         "lineBreak": {
             "before": {
@@ -38,16 +34,6 @@
                 "FunctionExpressionClosingBrace": -1
             }
         },
-        "whiteSpace": {
-            "before": {
-                "FunctionExpressionOpeningBrace": 1,
-                "FunctionExpressionClosingBrace": 1
-            },
-            "after": {
-                "FunctionExpressionOpeningBrace": 1,
-                "FunctionExpressionClosingBrace": -1
-            }
-        },
         // executes plugins in the same order as listed in the Array
         "plugins": [
             // "esformatter-phonetic",
@@ -57,11 +43,11 @@
             "esformatter-braces",
             "esformatter-spaced-lined-comment",
             "esformatter-semicolons",
-            // "esformatter-remove-trailing-commas"
+            "esformatter-remove-trailing-commas"
         ],
         "quotes": {
             "type": "single",
-            "avoidEscape": true
+            "avoidEscape": false
         }
     },
     "html": {
