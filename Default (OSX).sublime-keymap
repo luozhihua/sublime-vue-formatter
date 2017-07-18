@@ -1,0 +1,16 @@
+[{
+  "keys": ["super+shift+h"],
+  "command": "vuenextformatter"
+}, {
+  "keys": ["super+alt+h", "p"],
+  "command": "vuenextformatter_set_prettify_prefs"
+}, {
+  "keys": ["super+alt+h", "o"],
+  "command": "vuenextformatter_set_plugin_options"
+}, {
+  "keys": ["super+alt+h", "k"],
+  "command": "vuenextformatter_set_keyboard_shortcuts"
+}, {
+  "keys": ["super+alt+h", "n"],
+  "command": "vuenextformatter_set_node_path"
+}]

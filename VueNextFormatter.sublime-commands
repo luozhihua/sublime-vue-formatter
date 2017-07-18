@@ -1,0 +1,16 @@
+[{
+  "caption": "VueNextFormatter",
+  "command": "vuenextformatter"
+}, {
+  "caption": "VueNextFormatter: Set Prettify Preferences",
+  "command": "vuenextformatter_set_prettify_prefs"
+}, {
+  "caption": "VueNextFormatter: Set Plugin Options",
+  "command": "vuenextformatter_set_plugin_options"
+}, {
+  "caption": "VueNextFormatter: Set Keyboard Shortcuts",
+  "command": "vuenextformatter_set_keyboard_shortcuts"
+}, {
+  "caption": "VueNextFormatter: Set `node` Path",
+  "command": "vuenextformatter_set_node_path"
+}]

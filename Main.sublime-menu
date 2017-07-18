@@ -1,0 +1,47 @@
+[{
+  "id": "tools",
+  "children": [{
+    "id": "vuenextformatter_tools",
+    "caption": "Vue Next Formatter",
+    "children": [{
+      "caption": "Format Code",
+      "command": "vuenextformatter"
+    }, {
+      "caption": "Set Formatter Preferences",
+      "command": "vuenextformatter_set_prettify_prefs"
+    }, {
+      "caption": "Set Plugin Options",
+      "command": "vuenextformatter_set_plugin_options"
+    }, {
+      "caption": "Set Keyboard Shortcuts",
+      "command": "vuenextformatter_set_keyboard_shortcuts"
+    }, {
+      "caption": "Set `node` Path",
+      "command": "vuenextformatter_set_node_path"
+    }]
+  }]
+}, {
+  "id": "preferences",
+  "children": [{
+    "id": "package-settings",
+    "children": [{
+      "caption": "Vue Next Formatter",
+      "children": [{
+        "caption": "Format Code",
+        "command": "vuenextformatter"
+      }, {
+        "caption": "Set Formatter Preferences",
+        "command": "vuenextformatter_set_prettify_prefs"
+      }, {
+        "caption": "Set Plugin Options",
+        "command": "vuenextformatter_set_plugin_options"
+      }, {
+        "caption": "Set Keyboard Shortcuts",
+        "command": "vuenextformatter_set_keyboard_shortcuts"
+      }, {
+        "caption": "Set `node` Path",
+        "command": "vuenextformatter_set_node_path"
+      }]
+    }]
+  }]
+}]

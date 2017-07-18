@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "0.11"
+  - "0.10"
+  - "0.8"
+matrix:
+  allow_failures:
+    - node_js: "0.11"
+
+before_install:
+  - curl --location http://rawgit.com/twolfson/fix-travis-ci/master/lib/install.sh | bash -s
+
+script:
+  # Run custom script that uploads to coveralls after tests
+  - npm run travis
+
+notifications:
+  email:
+    recipients:
+      - todd@twolfson.com
+    on_success: change
+    on_failure: change
