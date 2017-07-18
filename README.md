@@ -6,7 +6,7 @@
 ## About
 This is a Sublime Text 2 and 3 plugin allowing you to format your HTML, CSS/Less/Sass, ES5/ES6/ES7 and JSON code. It based on `HTML-CSS-JS Prettify`. The formatters are written in JavaScript, so you'll need something (node.js) to interpret JavaScript code outside the browser.
 
-This will work with either Vue components, HTML, CSS/LESS/SCSS, ES5/ES6/ES7 and JSON files.
+This will work with either VUE Components, HTML, CSS/LESS/SCSS, ES5/ES6/ES7 and JSON files.
 
 ## Installation
 First of all, be sure you have [node.js](http://nodejs.org/#download) installed in order to run the beautifier. After you've installed node.js, you will need to setup this plugin.
@@ -39,7 +39,7 @@ Right click in the current buffer and select `Vue Next Formatter` -> `Formatter 
 
 -- or --
 
-Open a Vue component, HTML, CSS or ES/JavaScript file, pop out the console in Sublime Text from View -> Show Console, and type `view.run_command("vuenextformatter")`.
+Open a VUE Component, HTML, CSS or ES/JavaScript file, pop out the console in Sublime Text from View -> Show Console, and type `view.run_command("vuenextformatter")`.
 
 Writing commands in the console is ugly. Set up your own key combo for this, by going to Preferences -> Key Bindings - User, and adding a command in that array: `{ "keys": ["super+shift+h"], "command": "vuenextformatter" }`. You can use any other command you want, thought most of them are already taken.
 
