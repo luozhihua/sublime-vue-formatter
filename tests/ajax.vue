@@ -9,59 +9,13 @@
 <script>
 import { resolve } from 'path';
 
-const {alert, location} = window,
-  funca,
-  funcb,
-  a,
-  bb,
-  b,
-  x,
-  y,
-
-  z,[aaa, bbbb] = [1, 2];
-
-funca = () => {
-};
-
-funcb = (a) => a + 1;
-
-async function funcc() {
-  let a = await $.ajax.get({
-    url: '?x=12'
-  });
-}
-
-class a extends Event {
-  constructor() {
-    return a;
-  }
-
-  get adas() {
-    return 2;
-  }
-  async a(a) {
-    return a * a;
-  }
-}
-
-a = 1;
-bb = 2;
-b = 2;
-
-x = 1;
-y = 23;
-z = {
-  a: 2,
-  bb: 2
-};
-
 export default {
 
   /**
    * 默认数据
    */
   data() {
-    return {};
+    return {}
   },
 
   /**
@@ -75,9 +29,7 @@ export default {
      */
     let res1 = await this.$ajax({
         url: '/vue/data.json',
-
         method: 'get', // 'post',
-
         headers: {
           'X-Requested-With': 'XMLHttpRequest'
         },
@@ -100,7 +52,7 @@ export default {
       res4,
       undefined,
       response1,
-      response2;
+      response2
 
     /**
      * * DEMO 2
@@ -109,14 +61,14 @@ export default {
     params = {
       foo: 111,
       bar: 222
-    };
-    res2 = await this.$ajax.get(`/vue/data.json?abc=${ params.foo }&xyz=${ params.bar }`);
+    }
+    res2 = await this.$ajax.get(`/vue/data.json?abc=${ params.foo }&xyz=${ params.bar }`)
     res3 = await this.$ajax.get('/vue/data.json', {
       params: {
         foo: 1,
         bar: 2
       }
-    });
+    })
 
     /**
      * * DEMO 3
@@ -167,18 +119,18 @@ export default {
           baz: 2
         }
       }
-    ]);
+    ])
 
     /**
      * * DEMO 6
      *
      */
-    response1 = await this.$ajax.get('/vue/data.json');
-    response2 = await this.$ajax.get(`/vue/data.json?foo=${ response1.data }`);
+    response1 = await this.$ajax.get('/vue/data.json')
+    response2 = await this.$ajax.get(`/vue/data.json?foo=${ response1.data }`)
 
-    console.log(response2);
+    console.log(response2)
 
-    console.log(a, b, c, x, y, z, res1, res2, res3, res4);
+    console.log(a, b, c, x, y, z, res1, res2, res3, res4)
   }
 }
 

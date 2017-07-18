@@ -17,11 +17,14 @@
             "before": {
                 "FunctionDeclaration": ">=1",
                 "FunctionDeclarationOpeningBrace": 0,
-                "FunctionDeclarationClosingBrace": 1
+                "FunctionDeclarationClosingBrace": 1,
+                "ArrayExpressionClosing": 1
             },
             "after": {
                 "FunctionDeclaration": ">=1",
-                "FunctionDeclarationOpeningBrace": 1
+                "FunctionDeclarationOpeningBrace": 1,
+                "ArrayExpressionOpening": 1,
+                "ArrayExpressionComma": 1
             }
         },
         "whiteSpace": {
@@ -36,14 +39,15 @@
         },
         // executes plugins in the same order as listed in the Array
         "plugins": [
-            // "esformatter-phonetic",
-            "esformatter-onevar",
+            "esformatter-dot-notation",
+            "esformatter-asi",
             "esformatter-equals",
             "esformatter-quotes",
             "esformatter-braces",
             "esformatter-spaced-lined-comment",
             "esformatter-semicolons",
-            "esformatter-remove-trailing-commas"
+            "esformatter-remove-trailing-commas",
+            "esformatter-parseint"
         ],
         "quotes": {
             "type": "single",
