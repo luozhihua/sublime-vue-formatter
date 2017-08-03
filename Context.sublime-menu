@@ -1,9 +1,4 @@
-[
-  {
-    "caption": "Vue Next Formatter",
-    "command": "vuenextformatter"
-  },
-  {
+[{
   "caption": "Vue Next Formatter",
   "children": [{
     "caption": "Formater",

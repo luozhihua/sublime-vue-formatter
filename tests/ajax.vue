@@ -20,6 +20,7 @@
 
 <script>
 import { resolve } from 'path';
+
 export default {
 
   components: {
