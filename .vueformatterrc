@@ -126,7 +126,7 @@
         "selector_separator_newline": true // Separate selectors with newline or not (e.g. "a,\nbr" or "a, br")
     },
     "js": {
-        "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc"],
+        "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc", "vueformatterrc"],
 
         // Set brace_style
         //  collapse: (old default) Put braces on the same line as control statements

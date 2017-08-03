@@ -239,12 +239,15 @@ A few persistent options are always applied from a `.vueformatterrc` file locate
 To add different file extensions use `allowed_file_extensions` in the `.vueformatterrc` file:
 ```javascript
 {
+  "vue": {
+    "allowed_file_extensions": ["vue"]
+  },
   "html": {
     "allowed_file_extensions": ["html", "shtml", "aspx", "master", "xml", "xhtml"]
-  }
+  },
   "css": {
     "allowed_file_extensions": ["css", "scss", "sass", "less"]
-  }
+  },
   "js": {
     "allowed_file_extensions": ["js", "json", "jshintrc", "vueformatterrc"]
   }
