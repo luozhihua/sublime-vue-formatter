@@ -2,7 +2,6 @@ const jsdom = require('jsdom')
 const esformatter = require('esformatter')
 const cssBeautify = require('js-beautify').css
 const htmlBeautify = require('js-beautify').html
-const formatters = require('../formatters/index')
 const Entities = require('html-entities').AllHtmlEntities;
 
 const entities = new Entities();
