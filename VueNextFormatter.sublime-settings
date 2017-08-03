@@ -9,7 +9,7 @@
   },
 
   // Automatically format when a file is saved.
-  "format_on_save": true,
+  "format_on_save": false,
 
   // Only format the selection if there's one available.
   "format_selection_only": true,

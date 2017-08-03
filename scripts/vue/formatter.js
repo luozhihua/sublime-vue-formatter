@@ -3,6 +3,18 @@ const esformatter = require('esformatter')
 const cssBeautify = require('js-beautify').css
 const htmlBeautify = require('js-beautify').html
 const formatters = require('../formatters/index')
+const Entities = require('html-entities').AllHtmlEntities;
+
+const entities = new Entities();
+
+function matchTemplate(html) {
+  let startReg = /<template[^>]*>/
+  let endReg = /<\/template>/
+  html = html.split(startReg)[1]
+  html = html.split(endReg)[0]
+
+  return html
+}
 
 function createDom(html) {
   let dom = new jsdom.JSDOM('<body>' + html + '</body>')
@@ -37,7 +49,7 @@ module.exports = function(code, options) {
       case 'TEMPLATE':
         results.push([
           wrapper[0],
-          trim(htmlBeautify(elem.innerHTML, options.html)),
+          trim(htmlBeautify(matchTemplate(code), options.html)),
           wrapper[1]
         ].join(''))
         break
@@ -47,7 +59,7 @@ module.exports = function(code, options) {
         let lang = elem.getAttribute('lang') || 'css'
         results.push([
           wrapper[0].replace(/<stylesheet/g, '<style'),
-          trim(cssBeautify(elem.innerHTML, options.css)),
+          trim(cssBeautify(entities.decode(elem.innerHTML), options.css)),
           wrapper[1].replace(/<\/stylesheet>/g, '</style>')
         ].join(''))
         break

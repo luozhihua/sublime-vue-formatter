@@ -1,15 +1,35 @@
-<template>
+<template lang="html">
 <page title="AJAX Demos">
   <panel>
-    <h1 slot="header-left">AJAX Demos</h1>
+    <h1 slot="header-left">
+        AJAX Demos
+        </h1>
+    <Self-closing a="2" />
+    <hello-world xxx="2" />
+    <hello-world>
+      <custom-tag>
+        sdasd
+      </custom-tag>
+      <custom-tag a="2" b="3">
+      </custom-tag>
+      <img />
+    </hello-world>
   </panel>
 </page>
 </template>
 
 <script>
 import { resolve } from 'path';
-
 export default {
+
+  components: {
+    'hello-world': {
+      template: '<div>hello world!</div>'
+    },
+    'custom-tag': {
+      template: '<div>custom tag!</div>'
+    }
+  },
 
   /**
    * 默认数据
@@ -122,7 +142,7 @@ export default {
     ])
 
     /**
-     * * DEMO 6
+     * * DEMO 6`
      *
      */
     response1 = await this.$ajax.get('/vue/data.json')
@@ -141,8 +161,7 @@ export default {
   border-bottom: 1px solid #ccc;
   padding: 2rem 1rem;
   display: block;
-  &amp;
-  .hide {
+  &>.hide {
     display: none;
   }
 }
