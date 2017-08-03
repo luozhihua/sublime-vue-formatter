@@ -2,19 +2,20 @@
 	"name": "sublime-vue-formatter",
 	"version": "1.0.0",
 	"dependencies": {
-		"jsonminify": "*",
+		"esformatter": "*",
+		"esformatter-asi": "*",
+		"esformatter-braces": "*",
+		"esformatter-dot-notation": "*",
+		"esformatter-equals": "*",
+		"esformatter-parseint": "*",
+		"esformatter-quotes": "*",
+		"esformatter-remove-trailing-commas": "*",
+		"esformatter-semicolons": "*",
+		"esformatter-spaced-lined-comment": "*",
+		"html-entities": "*",
 		"js-beautify": "*",
 		"jsdom": "*",
-		"esformatter": "*",
-		"html-entities": "*",
-		"esformatter-dot-notation": "*",
-		"esformatter-asi": "*",
-		"esformatter-equals": "*",
-		"esformatter-quotes": "*",
-		"esformatter-braces": "*",
-		"esformatter-spaced-lined-comment": "*",
-		"esformatter-semicolons": "*",
-		"esformatter-remove-trailing-commas": "*",
-		"esformatter-parseint": "*"
+		"jsonminify": "*",
+		"pug-beautify": "^0.1.1"
 	}
 }

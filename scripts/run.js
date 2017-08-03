@@ -23,6 +23,7 @@ var pluginFolder = path.dirname(__dirname);
 var sourceFolder = path.dirname(filePath);
 var options = {
     html: {},
+    pug: {},
     vue: {},
     es: {},
     css: {},
@@ -78,6 +79,7 @@ fs.readFile(tempPath, "utf8", function(err, data) {
         opt.es = options["es"] || options["js"];
         opt.css = options["css"];
         opt.html = options["html"];
+        opt.pug = options["pug"];
         console.log(vue_beautify(data, opt));
     } else if (isHTML(filePath, data)) {
         options["html"].js = options["js"];
@@ -114,7 +116,7 @@ function setOptions(file, optionsStore) {
         var value = obj[key];
 
         // Options are defined as an object for each format, with keys as prefs.
-        if (key != "vue" && key != "html" && key != "css" && key != "es" && key != "js") {
+        if (key != "vue" && key != "html" && key != "css" && key != "es" && key != "pug" && key != "js") {
             continue;
         }
         for (var pref in value) {

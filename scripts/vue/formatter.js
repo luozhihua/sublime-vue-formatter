@@ -3,6 +3,7 @@ const esformatter = require('esformatter')
 const cssBeautify = require('js-beautify').css
 const htmlBeautify = require('js-beautify').html
 const Entities = require('html-entities').AllHtmlEntities;
+const pug = require('pug-beautify');
 
 const entities = new Entities();
 
@@ -34,6 +35,20 @@ function trim(code) {
   return code
 }
 
+function beautifyTemplate(template, lang, options) {
+  let result = ''
+
+  switch (lang) {
+    case 'pug':
+      result = pug(template, options.pug)
+      break;
+
+    default:
+      result = htmlBeautify(template, options.html)
+  }
+  return trim(result)
+}
+
 module.exports = function(code, options) {
   code = code.replace(/\<style/g, '<stylesheet')
   code = code.replace(/\<\/style\>/g, '<\/stylesheet\>')
@@ -42,20 +57,21 @@ module.exports = function(code, options) {
 
   for (let i = 0; i < body.children.length; i++) {
     let elem = body.children[i]
+    let lang = elem.getAttribute('lang')
     let wrapper = getElementWrapper(elem)
 
     switch (elem.tagName) {
       case 'TEMPLATE':
         results.push([
           wrapper[0],
-          trim(htmlBeautify(matchTemplate(code), options.html)),
+          // JSON.stringify(options[lang],2,2),
+          beautifyTemplate(matchTemplate(code), lang, options),
           wrapper[1]
         ].join(''))
         break
 
       case 'STYLESHEET':
       case 'STYLE':
-        let lang = elem.getAttribute('lang') || 'css'
         results.push([
           wrapper[0].replace(/<stylesheet/g, '<style'),
           trim(cssBeautify(entities.decode(elem.innerHTML), options.css)),
