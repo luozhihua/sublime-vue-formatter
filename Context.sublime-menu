@@ -1,10 +1,10 @@
 [{
   "caption": "Vue Next Formatter",
   "children": [{
-    "caption": "Formater",
+    "caption": "Format Vue",
     "command": "vuenextformatter"
   }, {
-    "caption": "Set Prettify Preferences",
+    "caption": "Set Formatter Preferences",
     "command": "vuenextformatter_set_prettify_prefs"
   }, {
     "caption": "Set Plugin Options",
