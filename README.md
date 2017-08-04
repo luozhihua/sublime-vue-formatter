@@ -1,4 +1,4 @@
-# Vue components, HTML, CSS/Less/Sass, ES5/ES6/ES7 and JSON code formatter for Sublime Text 2 and 3 via node.js
+# Vue components, HTML/Pug(Jade), CSS/Less/Sass, ES5/ES6/ES7 and JSON code formatter for Sublime Text 2 and 3 via node.js
 #### [Sublime Text 3](http://www.sublimetext.com/3)
 #### [esformatter](https://www.npmjs.com/package/esformatter)
 #### [pug-beautify](https://www.npmjs.com/package/pug-beautify)
@@ -8,7 +8,7 @@
 ## About
 This is a Sublime Text 2 and 3 plugin allowing you to format your HTML, CSS/Less/Sass, ES5/ES6/ES7 and JSON code. It based on `HTML-CSS-JS Prettify`. The formatters are written in JavaScript, so you'll need something (node.js) to interpret JavaScript code outside the browser.
 
-This will work with either VUE Components, HTML, CSS/LESS/SCSS, ES5/ES6/ES7 and JSON files, also support pug/html templates in VUE Components.
+This will work with either VUE Components, HTML/Pug(Jade), CSS/LESS/SCSS, ES5/ES6/ES7 and JSON files, also support pug/html templates in VUE Components.
 
 ## Installation
 First of all, be sure you have [node.js](http://nodejs.org/#download) installed in order to run the beautifier. After you've installed node.js, you will need to setup this plugin.
@@ -100,7 +100,7 @@ The plugin looks for a `.vueformatterrc` file in the following directories:
 3. Your home folder.
 4. Your personal Sublime settings folder.
 
-When one is found, it stops searching, and it uses those options along with the default ones. [Here](https://github.com/einars/js-beautify/blob/master/js/config/defaults.json)'s an example of how it can look like.
+When one is found, it stops searching, and it uses those options along with the default ones. 
 
 These are the default options used by this plugin:
 ```javascript
