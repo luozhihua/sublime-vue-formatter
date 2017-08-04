@@ -1,5 +1,5 @@
 [{
-  "keys": ["ctrl+shift+h"],
+  "keys": ["ctrl+shift+h", "f"],
   "command": "vuenextformatter"
 }, {
   "keys": ["ctrl+alt+h", "p"],
