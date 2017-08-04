@@ -1,5 +1,7 @@
 # Vue components, HTML, CSS/Less/Sass, ES5/ES6/ES7 and JSON code formatter for Sublime Text 2 and 3 via node.js
 #### [Sublime Text 3](http://www.sublimetext.com/3)
+#### [esformatter](https://www.npmjs.com/package/esformatter)
+#### [pug-beautify](https://www.npmjs.com/package/pug-beautify)
 #### [JS-beautify](https://github.com/einars/js-beautify)
 #### [Node.js download](http://nodejs.org/#download)
 

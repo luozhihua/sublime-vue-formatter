@@ -10,16 +10,19 @@
       <custom-tag>
         sdasd
       </custom-tag>
-      <custom-tag a="2" b="3">
+      <custom-tag a="2"
+                  b="3">
       </custom-tag>
       <img />
     </hello-world>
-    <input type="text" placeholder="请输入" name="jl_txt"
-      ref="gjjl"
-      @keyup.13="open('top')"
-      @blur="inputBlur"
-      @focus="inputFocus"
-      v-model="message ">
+    <input type="text"
+           placeholder="请输入"
+           name="jl_txt"
+           ref="gjjl"
+           @keyup.13="open('top')"
+           @blur="inputBlur"
+           @focus="inputFocus"
+           v-model="message " >
   </panel>
 </page>
 
