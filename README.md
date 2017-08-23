@@ -6,9 +6,9 @@
 #### [Node.js download](http://nodejs.org/#download)
 
 ## About
-This is a Sublime Text 2 and 3 plugin allowing you to format your HTML, CSS/Less/Sass, ES5/ES6/ES7 and JSON code. It based on `HTML-CSS-JS Prettify`. The formatters are written in JavaScript, so you'll need something (node.js) to interpret JavaScript code outside the browser.
+This is a Sublime Text 2 and 3 plugin allowing you to format your HTML/Pug(Jade), CSS/Less/Sass, ES5/ES6/ES7 and JSON code. It based on `HTML-CSS-JS Prettify`. The formatters are written in JavaScript, so you'll need something (node.js) to interpret JavaScript code outside the browser.
 
-This will work with either VUE Components, HTML/Pug(Jade), CSS/LESS/SCSS, ES5/ES6/ES7 and JSON files, also support pug/html templates in VUE Components.
+This will work with either VUE Components, HTML/Pug(Jade), CSS/LESS/SCSS, ES5/ES6/ES7 and JSON files.
 
 ## Installation
 First of all, be sure you have [node.js](http://nodejs.org/#download) installed in order to run the beautifier. After you've installed node.js, you will need to setup this plugin.
