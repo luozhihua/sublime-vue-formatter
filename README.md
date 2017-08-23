@@ -105,16 +105,18 @@ When one is found, it stops searching, and it uses those options along with the 
 These are the default options used by this plugin:
 ```javascript
 {
-    // The plugin looks for a .jsbeautifyrc file in the same directory as the
+    // The plugin looks for a .vueformatterrc file in the same directory as the
     // source file you're prettifying (or any directory above if it doesn't exist,
     // or in your home folder if everything else fails) and uses those options
     // along the default ones.
 
-    // Details: https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options
-    // Documentation: https://github.com/einars/js-beautify/
+    // Details: https://github.com/luozhihua/sublime-vue-formatter#using-your-own-vueformatterrc-options
+    // Documentation: https://github.com/luozhihua/sublime-vue-formatter
     "vue": {
         "allowed_file_extensions": ["vue"]
     },
+
+    // esformatter Documentation: https://github.com/millermedeiros/esformatter/blob/master/doc/config.md
     "es": {
         "indent": {
             "value": "  "
@@ -160,6 +162,7 @@ These are the default options used by this plugin:
             "avoidEscape": false
         }
     },
+
     "html": {
         "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg", "vuetemplate"],
         "brace_style": "collapse", // [collapse|expand|end-expand|none] Put braces on the same line as control statements (default), or put braces on own line (Allman / ANSI style), or just put end braces on own line, or attempt to keep them where they are
@@ -184,7 +187,7 @@ These are the default options used by this plugin:
         "selector_separator_newline": true // Separate selectors with newline or not (e.g. "a,\nbr" or "a, br")
     },
     "js": {
-        "allowed_file_extensions": ["js", "json", "jshintrc", "jsbeautifyrc"],
+        "allowed_file_extensions": ["js", "json", "jshintrc", "eshintrc", "vueformatterrc"],
 
         // Set brace_style
         //  collapse: (old default) Put braces on the same line as control statements
@@ -230,7 +233,7 @@ And here's how a `.vueformatterrc` file in your home folder could look like:
 }
 ```
 
-See documentation for [JS](https://github.com/einars/js-beautify/#options), or [CSS and HTML](https://github.com/einars/js-beautify/#css--html).
+See documentation for [ES](// esformatter Documentation: https://github.com/millermedeiros/esformatter/blob/master/doc/config.md), [JS](https://github.com/einars/js-beautify/#options), [Pug](https://github.com/vingorius/pug-beautify), or [CSS and HTML](https://github.com/einars/js-beautify/#css--html).
 
 A few persistent options are always applied from a `.vueformatterrc` file located in the same directory as the plugin, if not overwritten by your own `.vueformatterrc` file. Those are defined [here](https://github.com/luozhihua/Sublime-VueNextFormatter/blob/master/.vueformatterrc). You can safely add stuff to that json file if you want:
 
