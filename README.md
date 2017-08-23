@@ -233,7 +233,7 @@ And here's how a `.vueformatterrc` file in your home folder could look like:
 }
 ```
 
-See documentation for [ES](// esformatter Documentation: https://github.com/millermedeiros/esformatter/blob/master/doc/config.md), [JS](https://github.com/einars/js-beautify/#options), [Pug](https://github.com/vingorius/pug-beautify), or [CSS and HTML](https://github.com/einars/js-beautify/#css--html).
+See documentation for [ES](https://github.com/millermedeiros/esformatter/blob/master/doc/config.md), [JS](https://github.com/einars/js-beautify/#options), [Pug](https://github.com/vingorius/pug-beautify), or [CSS and HTML](https://github.com/einars/js-beautify/#css--html).
 
 A few persistent options are always applied from a `.vueformatterrc` file located in the same directory as the plugin, if not overwritten by your own `.vueformatterrc` file. Those are defined [here](https://github.com/luozhihua/Sublime-VueNextFormatter/blob/master/.vueformatterrc). You can safely add stuff to that json file if you want:
 
