@@ -1,3 +1,6 @@
 *.sublime-project
 *.sublime-workspace
 package-metadata.json
+package-control.cleanup
+*.__temp__
+.__temp__
