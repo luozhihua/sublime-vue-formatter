@@ -11,7 +11,6 @@ except ImportError:
   pass
 
 PLUGIN_FOLDER = os.path.dirname(os.path.realpath(__file__))
-USER_FOLDER = os.path.join(sublime.packages_path(), 'User')
 RC_FILE = ".vueformatterrc"
 SETTINGS_FILE = "VueNextFormatter.sublime-settings"
 KEYMAP_FILE = "Default ($PLATFORM).sublime-keymap"
@@ -84,7 +83,8 @@ class VuenextformatterCommand(sublime_plugin.TextCommand):
       node_path = PluginUtils.get_node_path()
       script_path = PLUGIN_FOLDER + "/scripts/run.js"
       file_path = self.view.file_name()
-      cmd = [node_path, script_path, temp_file_path, file_path or "?", USER_FOLDER]
+      user_folder = os.path.join(sublime.packages_path(), 'User')
+      cmd = [node_path, script_path, temp_file_path, file_path or "?", user_folder]
       output = PluginUtils.get_output(cmd)
 
       # Make sure the correct/expected output is retrieved.
