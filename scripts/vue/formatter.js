@@ -9,7 +9,7 @@ const entities = new Entities();
 
 function matchTemplate(html) {
   let startReg = /<template[^>]*>/
-  let endReg = /<\/template>/
+  let endReg = /\<\/template>(?=[^<\/template>]*$)/
   html = html.split(startReg)[1]
   html = html.split(endReg)[0]
 
